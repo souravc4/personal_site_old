@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-image: url("images/macro.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .tab-content{
+            border-style: groove;
+            border-color: #101112;
+            border-width: thin;
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img class="img-responsive" src="images/NiP_Logo.png" width="50" height="35">
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Favourites <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cars.html">Cars</a></li>
+                            <li><a href="bayern_munich.html">Bayern Munich</a></li>
+                            <li><a href="cs_go.html">CS-GO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="header">
+        <h2>
+            My Online Profiles
+        </h2>
+    </div>
+    <div class="jumbotron">
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href="#facebook">Facebook</a></li>
+            <li><a data-toggle="pill" href="#twitter">Twitter</a></li>
+            <li><a data-toggle="pill" href="#github">Github</a></li>
+            <li><a data-toggle="pill" href="#steam">Steam</a></li>
+        </ul>
+        <br>
+        <div class="tab-content">
+            <div id="facebook" class="tab-pane fade in active">
+                <br>
+                <a href="https://www.facebook.com/astonc4"><img class="img-rounded" src="images/facebook.png" width="50" height="50">
+                    <p>https://www.facebook.com/astonc4</p>
+                </a>
+            </div>
+            <div id="twitter" class="tab-pane fade">
+                <br>
+                <a href="https://twitter.com/souravc4"><img class="img-rounded" src="images/twitter.png" width="50" height="50">
+                    <p>https://twitter.com/souravc4</p>
+                </a>
+            </div>
+            <div id="github" class="tab-pane fade">
+                <br>
+                <a href="https://github.com/souravc4"><img class="img-rounded" src="images/github.png" width="50" height="50">
+                    <p>https://github.com/souravc4</p>
+                </a>
+            </div>
+            <div id="steam" class="tab-pane fade">
+                <br>
+                <a href="https://github.com/souravc4"> <img class="img-rounded" src="images/steam.png" width="50" height="50">
+                    <p>https://store.steampowered.com</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
