@@ -23,33 +23,48 @@
         h2{
             color: whitesmoke;
         }
+        .caption{
+            display: inline-block;
+        }
+        .panel-heading{
+            text-align: center;
+            font-size: 18px;
+            font-style: Verdana;
+            background-color: lightgrey;
+        }
     </style>
 </head>
 
 <body>
 <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <img class="img-responsive" src="images/NiP_Logo.png" width="50" height="35">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="img-responsive" src="images/NiP_Logo.png" width="50" height="35">
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="schooling.html">Schooling</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Likings <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="aston_martin.html">Aston Martin</a></li>
+                                <li><a href="bayern_munich.html">Bayern Munich</a></li>
+                                <li><a href="cs_go.html">Counter Strike</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Favourites <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="cars.html">Cars</a></li>
-                            <li><a href="bayern_munich.html">Bayern Munich</a></li>
-                            <li><a href="cs_go.html">CS-GO</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
     <br><br>
     <div class="header">
         <h2>
@@ -67,29 +82,55 @@
         <div class="tab-content">
             <div id="facebook" class="tab-pane fade in active">
                 <br>
-                <a href="https://www.facebook.com/astonc4"><img class="img-rounded" src="images/facebook.png" width="50" height="50">
-                    <p>https://www.facebook.com/astonc4</p>
+                <a onclick='window.open("https://www.facebook.com/astonc4")' href="#">
+                    <img class="img-rounded" src="images/facebook.png" width="50" height="50">
+                    <p class="caption">https://www.facebook.com/astonc4</p><br></br>
                 </a>
             </div>
             <div id="twitter" class="tab-pane fade">
                 <br>
-                <a href="https://twitter.com/souravc4"><img class="img-rounded" src="images/twitter.png" width="50" height="50">
-                    <p>https://twitter.com/souravc4</p>
+                <a onclick='window.open("https://twitter.com/souravc4")' href="#">
+                    <img class="img-rounded" src="images/twitter.png" width="50" height="50">
+                    <p class="caption">https://twitter.com/souravc4</p><br></br>
                 </a>
             </div>
             <div id="github" class="tab-pane fade">
                 <br>
-                <a href="https://github.com/souravc4"><img class="img-rounded" src="images/github.png" width="50" height="50">
-                    <p>https://github.com/souravc4</p>
+                <a onclick='window.open("https://github.com/souravc4")' href="#">
+                    <img class="img-rounded" src="images/github.png" width="50" height="50">
+                    <p class="caption">https://github.com/souravc4</p><br></br>
                 </a>
             </div>
             <div id="steam" class="tab-pane fade">
                 <br>
-                <a href="https://github.com/souravc4"> <img class="img-rounded" src="images/steam.png" width="50" height="50">
-                    <p>https://store.steampowered.com</p>
+                <a onclick='window.open("https://store.steampowered.com")' href="#"> 
+                    <img class="img-rounded" src="images/steam.png" width="50" height="50">
+                    <p class="caption">https://store.steampowered.com</p><br></br>
                 </a>
             </div>
         </div>
+    </div>
+    <div class="jumbotron">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Send me a message:</div>
+        </div>
+        
+        <form role="form" method="post" action="submit.php">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" rows="5" name="message"></textarea>
+            </div>
+           
+            <div class="form-group">
+                <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            </div>
+        </form>
+
     </div>
 </div>
 

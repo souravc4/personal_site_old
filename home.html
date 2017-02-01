@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+		body{
+			background-image: url("images/sea.jpg");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: Segoe UI,sans-serif;
+		}
+		.panel-body{
+			text-align: center;
+			font-size: 20px;
+			font-style: Verdana;
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+
+<body>
+<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img class="img-responsive" src="images/NiP_Logo.png" width="50" height="35">
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            	<li><a href="home.html">Home</a></li>
+                                <li><a href="schooling.html">Schooling</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Likings <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="aston_martin.html">Aston Martin</a></li>
+                                <li><a href="bayern_munich.html">Bayern Munich</a></li>
+                                <li><a href="cs_go.html">Counter Strike</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <br><br><br>
+    <div class="panel panel-default">
+		  <div class="panel-body">Jamshedpur</div>
+	</div>
+	<div class="jumbotron">
+	<div id="map" style="width:100%;height:500px"></div>
+	<script>
+	function myMap() {
+	  var myCenter = new google.maps.LatLng(22.8046,86.2029);
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {center: myCenter, zoom: 5};
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	  var marker = new google.maps.Marker({position:myCenter});
+	  marker.setMap(map);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyCm1OWwA4npBdtOoyRmDeDuefOCwAIuA&callback=myMap"></script>
+	<blockquote>
+		Jamshedpur is the most populous urban agglomeration in the Indian state of Jharkhand.<br>
+		Jamshedpur is the headquarters of the East Singhbhum district of Jharkhand. According to the 2011 census of India, Jamshedpur (East Singhbhum & Seraikela-Kharsawan) district has current population of 1,337,131; the Jamshedpur urban agglomeration (UA), which includes the adjoining areas, Jamshedpur Urban Area is the third Largest city in Eastern India. It is also the first planned industrial city of India. It is located on the Chota Nagpur plateau and is surrounded by the picturesque Dalma Hills. The city is bordered by the rivers Subarnarekha and Kharkai on the north and west parts of the city. Jamshedpur is home to world's tenth largest steel manufacturing company, Tata Steel.<br>
+		Jamshedpur has been predicted as the 84th fastest growing city in the world for the timeframe 2006–2020 with average annual growth of 2.59%
+		<footer>Wikipedia</footer>
+
+	</blockquote>
+	</div>
+	<div class="jumbotron">
+		<p>Some pics of the city</p>
+
+		<div id="home" class="carousel slide" data-ride="carousel">
+	        
+	        <ol class="carousel-indicators">
+	            <li data-target="#home" data-slide-to="0" class="active"></li>
+	            <li data-target="#home" data-slide-to="1"></li>
+	            <li data-target="#home" data-slide-to="2"></li>
+	            <li data-target="#home" data-slide-to="3"></li>
+	            <li data-target="#home" data-slide-to="4"></li>
+	        </ol>
+
+	        <div class="carousel-inner" role="listbox">
+
+	            <div class="item active">
+	                <img src="images/jubilee_park.jpg" width="1600" height="900">
+	                <div class="carousel-caption">
+	                    <h4>Jubilee Park</h4>
+	                </div>
+	            </div>
+
+	            <div class="item">
+	                <img src="images/jamshedpur.jpg" width="1600" height="900">
+	                <div class="carousel-caption">
+	                    <h4>A hotel near Dalma Hills</h4>
+	                </div>
+	            </div>
+
+	            <div class="item">
+	                <img src="images/jamshedpur1.jpg" width="1600" height="900">
+	                <div class="carousel-caption">
+	                    <h4>Tata Steel</h4>
+	                </div>
+	            </div>
+
+	            <div class="item">
+	                <img src="images/Sakchi_Golchakkar.jpg" width="1600" height="900">
+	                <div class="carousel-caption">
+	                    <h4>Sakchi Golchakkar</h4>
+	                </div>
+	            </div>
+
+	            <div class="item">
+	                <img src="images/dimna_lake.jpg" width="1600" height="900">
+	                <div class="carousel-caption">
+	                    <h4>Dimna Lake</h4>
+	                </div>
+	            </div>
+
+	        </div>
+
+	        <a class="left carousel-control" href="#home" role="button" data-slide="prev">
+	            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	            <span class="sr-only">Previous</span>
+	        </a>
+	        <a class="right carousel-control" href="#home" role="button" data-slide="next">
+	            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	            <span class="sr-only">Next</span>
+	        </a>
+	    </div>
+    </div>
+	</div>
+</body>
+</html>
